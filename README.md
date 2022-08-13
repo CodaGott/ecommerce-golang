@@ -1,6 +1,6 @@
 # E-Commerce With Golang
 
-An Ecommerce application with basic authentications like sign-up, login.
+An E-commerce application with basic authentications like sign-up, login.
 
 Built using Golang as the backend and MongoDb as database.
 
