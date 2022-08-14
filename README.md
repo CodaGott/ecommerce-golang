@@ -2,7 +2,7 @@
 
 An Ecommerce application with basic authentications like sign-up, login.
 
-Built using Golang as the backend and MongoDb as database.
+Built using Gin, a Golang framework as the backend and MongoDb as database.
 
 The goal is to build the front-end with Vue later.
 
