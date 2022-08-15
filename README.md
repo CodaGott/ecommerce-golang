@@ -46,7 +46,7 @@ Database coming soon
 
 ## Installation
 
-Install my-project with the go get command
+Install and run my-project with the go get command below
 
     Clone the project, cd to your Go workstation and run the command below.
 

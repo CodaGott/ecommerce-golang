@@ -1,17 +1,18 @@
 package models
 
 import (
-	"time"
 	"go.mongodb.org/mongo-driver/bson/primitive"
+	"time"
 )
 
 type User struct {
-	ID 						primitive.ObjectID			`bson:"_id"`
+	ID 						primitive.ObjectID			`json:"_id" bson:"_id"`
 	FirstName 				*string						`json:"first_name" bson:"first_name" validate:"required, min=2, max=30"`
 	LastName 				*string						`json:"last_name" validate:"required, min=2, max=30"`
 	Email 					*string						`json:"email" validate:"email, required"`
 	Password 				*string						`json:"password" validate:"required"`
 	Token 					*string						`json:"token"`
+	Phone					*string						`json:"phone" validate:"min=8"`
 	RefreshToken 			*string						`json:"refresh_token"`
 	CreatedAt 				time.Time					`json:"created_at"`
 	UpdatedAt 				time.Time					`json:"updated_at"`
